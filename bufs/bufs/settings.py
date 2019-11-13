@@ -124,6 +124,6 @@ STATIC_URL = '/static/'
 
 #STATIC_ROOT = '/home/nstone/Desktop/bufs_site/bufs/static/'
 
-MEDIA_ROOT = '/home/nstone/Desktop/bufs_site/bufs/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
 
 MEDIA_URL = '/media/'
