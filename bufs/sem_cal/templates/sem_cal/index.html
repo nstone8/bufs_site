@@ -1,0 +1,19 @@
+{% extends "sem_cal/base.html" %}
+{% block title %} Seminars {% endblock %}
+{% block content %}
+{% if upcoming_seminars %}
+<h1>Upcoming Seminars</h1>
+{% endif %}
+{% for sem in upcoming_seminars%}
+<a href="/seminars/{{sem.id}}"> {{sem.presenter}} </a> {{sem.title}}
+<br><br>
+{% endfor %}
+
+{% if past_seminars %}
+<h1>Past Seminars</h1>
+{% endif %}
+{% for sem in past_seminars%}
+<a href="/seminars/{{sem.id}}"> {{sem.presenter}} </a> {{sem.title}}
+<br><br>
+{% endfor %}
+{% endblock %}

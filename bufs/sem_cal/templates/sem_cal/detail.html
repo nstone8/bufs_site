@@ -1,0 +1,17 @@
+{% extends "sem_cal/base.html" %}
+{% block title %} {{sem.presenter}} {% endblock %}
+{% block content %}
+<h1>{{sem.presenter}}</h1>
+{% if sem.headshot %}
+<img src={{sem.headshot.url}}>
+{% endif %}
+{% if sem.abstract %}
+<h2>Abstract</h2>
+<p>{{sem.abstract}}</p>
+{% endif %}
+  
+{% if sem.bio %}
+<h2>Biography</h2>
+<p>{{sem.bio}}</p>
+{% endif %}
+{% endblock %}
