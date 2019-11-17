@@ -1,1 +1,1 @@
-web: gunicorn bufs.bufs.wsgi
+web: gunicorn bufs.wsgi
