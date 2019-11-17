@@ -1,1 +1,1 @@
-web: gunicorn bufs.wsgi --log-file -
+web: gunicorn bufs.bufs.wsgi --log-file -
